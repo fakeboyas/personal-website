@@ -1,15 +1,11 @@
-/*
-    DEMO STYLE
-*/
-
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    font-family: "Poppins", sans-serif;
+    background-image: url(./asset/img/bg.png);
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
@@ -62,7 +58,7 @@ a:focus {
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
+    background: #7386d5;
     color: #fff;
     transition: all 0.3s;
 }
@@ -93,11 +89,11 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color: #7386d5;
     background: #fff;
 }
 
-#sidebar ul li.active>a,
+#sidebar ul li.active > a,
 a[aria-expanded="true"] {
     color: #fff;
     background: #6d7fcc;
@@ -135,7 +131,7 @@ ul.CTAs a {
 
 a.download {
     background: #fff;
-    color: #7386D5;
+    color: #7386d5;
 }
 
 a.article,
@@ -150,7 +146,6 @@ a.article:hover {
 
 #content {
     width: calc(100% - 250px);
-    padding: 40px;
     min-height: 100vh;
     transition: all 0.3s;
     position: absolute;
@@ -162,11 +157,162 @@ a.article:hover {
     width: 100%;
 }
 
+.content1 {
+    padding: 40px;
+}
+.content-main h1 {
+    font-weight: 200;
+    margin-bottom: 60px;
+    padding: 30px 40px;
+    text-transform: uppercase;
+    background-color: #008073 !important;
+    font-weight: "Poppins", sans-serif;
+    font-weight: bolder;
+}
+.jumbotron {
+    padding: 40px;
+    height: 80vh;
+    color: black !important;
+    background-size: cover;
+    margin: 0px !important;
+    opacity: 0.8;
+}
+
+.jumbotron .display-4 {
+    font-weight: bolder !important;
+    color: #ddd;
+}
+
+/*card
+
+*/
+.content-experience {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.card-content2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 20px;
+    background-color: white;
+    margin: 30px;
+    box-shadow: #999 5px 15px;
+}
+
+.title-card {
+    display: flex;
+    flex-direction: row;
+    border-bottom-color: black solid;
+}
+
+.title-employer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+}
+.title-employer img {
+    width: 50px;
+    height: 50px;
+}
+
+.job-position {
+    width: 50%;
+    text-align: end;
+}
+
+/*content skills*/
+.content-skills {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 40px;
+    box-shadow: #888888 5px 10px;
+    box-sizing: border-box;
+}
+
+.content-skills .card-body {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+/*content education
+*/
+.edu-content {
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: white;
+    margin: 20px;
+    align-items: center;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.img-fluid {
+    border-radius: 50% !important;
+    width: 200px;
+    height: 200px;
+}
+
+.content-edu {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+/*end content contact*/
+
+/*content contac */
+
+.content-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+/*content project*/
+
+.content-project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+}
+
+.display-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 30%;
+    padding: 20px;
+    height: 300px;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 5px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.display-card .card-title {
+    text-align: center;
+}
+.display-card .card-body {
+    text-align: center;
+}
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     #sidebar {
         margin-left: -250px;
     }
@@ -181,5 +327,36 @@ a.article:hover {
     }
     #sidebarCollapse span {
         display: none;
+    }
+
+    .content-skills .card-body {
+        flex-direction: column;
+    }
+
+    .content-skills .card-body img {
+        margin-bottom: 20px;
+    }
+
+    .content-edu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .edu-content {
+        width: 80%;
+        align-items: center;
+    }
+
+    .title-employer img {
+        display: none;
+    }
+
+    .content-project {
+        flex-direction: column;
+    }
+
+    .display-card {
+        width: 80%;
     }
 }
