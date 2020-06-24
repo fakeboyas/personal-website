@@ -311,6 +311,10 @@ a.article:hover {
 .display-card .card-body {
     text-align: center;
 }
+.display-card img {
+    width: 250px;
+    height: 150px;
+}
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -332,12 +336,19 @@ a.article:hover {
         display: none;
     }
 
+    .content-skills {
+        width: 80%;
+        flex-wrap: wrap;
+    }
     .content-skills .card-body {
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .content-skills .card-body img {
         margin-bottom: 20px;
+        width: 150px;
+        height: 150px;
     }
 
     .content-edu {
@@ -361,5 +372,23 @@ a.article:hover {
 
     .display-card {
         width: 80%;
+        height: auto;
+    }
+
+    .jumbotron .display-4 {
+        font-weight: bolder !important;
+        color: #ddd;
+        font-size: 40px;
+    }
+
+    .display-card img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .card-content2 {
+        width: 300px;
+        margin: 0px;
+        margin-bottom: 40px;
     }
 }
